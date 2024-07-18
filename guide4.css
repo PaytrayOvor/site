@@ -1,0 +1,65 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Dark gray or you can use #000 for black */
+    color: #fff; /* Optional: Change text color to white for better contrast */
+}
+
+/* Center the image list */
+.image-list {
+    max-width: 800px; /* Adjust as needed */
+    margin: 20px auto; /* Center horizontally */
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Drop shadow */
+}
+
+/* Style individual images */
+.image-list img {
+    display: block; /* Ensures images are on their own line */
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between images */
+}
+
+/* Center-align text and make it larger */
+.centered-text {
+    text-align: center; /* Center-align text */
+    font-size: 32px; /* Make text larger */
+    margin: 20px auto; /* Add space above and below text */
+    max-width: 1000px; /* Same max-width as image list for consistency */
+    line-height: 1.5; /* Increase line height for better readability */
+}
+
+/* Style the icon and position it in the top left */
+.icon {
+    position: absolute; /* Use absolute positioning */
+    top: 10px; /* Position 10px from the top */
+    left: 10px; /* Position 10px from the left */
+}
+
+.redirect-icon {
+    width: 150px; /* Adjust the size of the icon */
+    height: 150px; /* Maintain aspect ratio */
+    cursor: pointer; /* Change cursor to pointer when hovering over the icon */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .centered-text {
+        font-size: 24px; /* Decrease text size */
+        margin: 20px 10px; /* Adjust margins */
+    }
+
+    .icon {
+        top: 20px; /* Increase top space */
+        left: calc(50% - 75px); /* Center horizontally, adjust based on icon width */
+    }
+
+    .redirect-icon {
+        width: 100px; /* Adjust icon size */
+        height: 100px; /* Maintain aspect ratio */
+    }
+}
