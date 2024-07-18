@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 255, 255, 0.1);
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content {
+    background: rgba(0, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0 10px 0px;
+}
+
+/* Side Images */
+.sides {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.side-image {
+    width: 100%; /* Ensure images take full width of their container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure images do not exceed their natural width */
+    max-height: 100%; /* Ensure images do not exceed their natural height */
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Banners */
+.banner {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+}
+
+.banner.left {
+    left: 0;
+}
+
+.banner.right {
+    right: 0;
+}
+
+.banner img {
+    width: 100%;
+    height: 1000px;
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sides {
+        flex-direction: column;
+    }
+    
+    .side-image {
+        width: 100%;
+    }
+
+    .banner {
+        display: none;
+    }
+}
+/* Optional CSS for styling */
+.image-link {
+    max-width: 800px; /* Adjust as needed */
+    margin: 20px auto; /* Center horizontally */
+    text-align: center; /* Center align content */
+}
+
+.image-link img {
+    max-width: 100%; /* Ensure image does not exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.text-between-images {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.text-between-images p {
+    font-size: 50px; /* Adjust font size as needed */
+    color: #ca1818;
+}
