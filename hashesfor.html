@@ -24,8 +24,8 @@
             width: 100%;
         }
         p {
-            margin: 10px 0; /* Increased margin for more spacing */
-            font-size: 16px; /* Increased font size for better visibility */
+            margin: 15px 0; /* Increased margin for more spacing */
+            font-size: 16px; /* Default font size for desktop */
             width: 100%; /* Full width for each hash */
             cursor: pointer;
         }
@@ -35,6 +35,20 @@
         .hash-container {
             display: flex;
             flex-direction: column; /* Stacks hashes vertically */
+        }
+        
+        /* Media Query for Mobile Devices */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 30px; /* Smaller title on mobile */
+            }
+            h2 {
+                font-size: 20px; /* Smaller subtitle on mobile */
+            }
+            p {
+                font-size: 12px; /* Smaller font size for hashes on mobile */
+                margin: 10px 0; /* Adjusted margin for hashes on mobile */
+            }
         }
     </style>
     <script>
